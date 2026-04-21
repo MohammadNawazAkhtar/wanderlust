@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+      button{
+        margin: 5px 15px;
+        padding: 5px 15px;
+      }
+    </style>
+</head>
+<body>
+  <ul type="none">
+    <li><b>Title:</b><%= obj.title %></li>
+    <li><b>Description:</b><%= obj.desc %></li>
+    <li><b>Image Link:</b><%= obj.imagelink %></li>
+    <li><b>Price</b>₹<%= obj.price.toLocaleString() %></li>
+    <li><b>Location:</b><%= obj.location %></li>
+    <li><b>Country:</b><%= obj.country %></li>
+  </ul>
+  <form method="GET" action="/listings/<%= obj._id %>/edit">
+    <button>Edit Listing</button>
+  </form>
+</body>
+</html>

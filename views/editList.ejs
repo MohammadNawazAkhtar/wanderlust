@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+  <form action="/listings/<%=obj._id%>/edit/save?_method=PUT" method="POST">
+    <label for="title">Title: </label>
+    <input type="text" name="title" value="<%= obj.title %>"> <br> <br>
+    <label for="desc">Description:</label>
+    <textarea name="desc" cols="35" rows="6"><%= obj.desc %></textarea> <br><br>
+    <label for="imagelink">Image Link:</label>
+    <input type="text" name="imagelink" value="<%= obj.imagelink%>"><br><br>
+    <label for="price">Price:</label>
+    <input type="number" name="price" value="<%= obj.price%>"><br><br>
+    <label for="location">Location:</label>
+    <input type="text" name="location" value="<%= obj.location%>"><br><br>
+    <label for="country">Country:</label>
+    <input type="text" name="country" value="<%= obj.country %>">
+    <button type="submit">SAVE</button>
+  </form>
+</body>
+</html>
