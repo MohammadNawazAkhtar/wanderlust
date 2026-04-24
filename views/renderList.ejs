@@ -23,5 +23,8 @@
   <form method="GET" action="/listings/<%= obj._id %>/edit">
     <button>Edit Listing</button>
   </form>
+  <form method="POST" action="/listings/<%= obj._id %>?_method=DELETE">
+    <button>Delete Listing</button>
+  </form>
 </body>
 </html>

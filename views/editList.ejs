@@ -6,7 +6,7 @@
     <title></title>
 </head>
 <body>
-  <form action="/listings/<%=obj._id%>/edit/save?_method=PUT" method="POST">
+  <form action="/listings/<%=obj._id%>/edit?_method=PUT" method="POST">
     <label for="title">Title: </label>
     <input type="text" name="title" value="<%= obj.title %>"> <br> <br>
     <label for="desc">Description:</label>

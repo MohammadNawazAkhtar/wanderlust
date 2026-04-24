@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+  <form method="POST" action="/listings/new?_method=PUT">
+    <label for="title">Title: </label>
+    <input type="text" name="listingData[title]" placeholder="enter title"> <br> <br>
+    <label for="desc">Description:</label>
+    <textarea name="listingData[desc]" cols="35" rows="6" placeholder="enter description"></textarea> <br><br>
+    <label for="imagelink">Image Link:</label>
+    <input type="text" name="listingData[imagelink]" placeholder="attach image link"><br><br>
+    <label for="price">Price:</label>
+    <input type="number" name="listingData[price]" placeholder="enter price"><br><br>
+    <label for="location">Location:</label>
+    <input type="text" name="listingData[location]" placeholder="enter location"><br><br>
+    <label for="country">Country:</label>
+    <input type="text" name="listingData[country]" placeholder="enter
+    country"><br><br>
+    <button>ADD</button>
+  </form>
+</body>
+</html>
